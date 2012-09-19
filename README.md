@@ -5,7 +5,12 @@ Twitter Bootstrap for Dart.
 
 modal
 -----
-Show to modal dialogbox.
+Show modal dialogbox.
+
 alert
 -----
-Show to alert.
+Show alert.
+
+progress
+--------
+Show Progress bar.

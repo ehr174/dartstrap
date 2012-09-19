@@ -1,4 +1,4 @@
-Dartstrap
+dartstrap
 =========
 
 Twitter Bootstrap for Dart.

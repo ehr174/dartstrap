@@ -30,7 +30,7 @@ class Alert {
     parent.nodes.add(divElement);
 
     return divElement;
-}
+  }
 
 
   String _buildAlertDiv( String message, List<String> options ) {

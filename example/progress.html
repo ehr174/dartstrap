@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>example</title>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          &nbsp;
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span12">
+
+          <form class="form-horizontal">
+            <div class="control-group">
+              <label class="control-label" for="inputEmail">progress</label>
+              <div class="controls">
+                <select id="selectPercent">
+                  <option>0</option>
+                  <option>10</option>
+                  <option>20</option>
+                  <option selected>30</option>
+                  <option>40</option>
+                  <option>50</option>
+                  <option>60</option>
+                  <option>70</option>
+                  <option>80</option>
+                  <option>90</option>
+                  <option>100</option>
+                </select>              </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                <label class="checkbox">
+                  <input id="chkStriped" type="checkbox"> Striped
+                </label>
+                <label class="checkbox">
+                  <input id="chkActive" type="checkbox"> Active
+                </label>
+
+                <h4>Color</h4>
+                <label class="radio text-info">
+                  <input type="radio" name="optionsRadios" id="radioInfo" value="Info" checked>Info
+                </label>
+                <label class="radio text-success">
+                  <input type="radio" name="optionsRadios" id="radioSuccess" value="Success">Success
+                </label>
+                <label class="radio text-warning">
+                  <input type="radio" name="optionsRadios" id="radioWarning" value="Warning">Warning
+                </label>
+                <label class="radio text-error">
+                  <input type="radio" name="optionsRadios" id="radioDanger" value="Danger">Danger
+                </label>
+
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <div id="progress">
+          </div>
+        </div>
+      </div>      
+    </div>
+
+    <script type="application/dart" src="progress.dart"></script>
+    <script src="http://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

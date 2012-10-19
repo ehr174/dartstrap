@@ -4,8 +4,7 @@ dartstrap
 Twitter Bootstrap for Dart.
 
 see http://twitter.github.com/bootstrap/index.html
-and http://twitter.github.com/bootstrap/javascript.html
-
+and http://twitter.github.com/bootstrap/javascript.htmla
 
 
 modal

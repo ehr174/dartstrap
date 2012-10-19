@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-dartstrapx
+dartstrap
 =========
 
 Twitter Bootstrap for Dart.

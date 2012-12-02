@@ -1,3 +1,5 @@
+part of dartstrap;
+
 class Progress {
   static final String STRIPED  = "progress-striped";
   static final String ACTIVE   = "active";

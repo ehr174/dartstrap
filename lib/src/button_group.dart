@@ -1,3 +1,5 @@
+part of dartstrap;
+
 class ButtonGroup {
 
   static final String BUTTON_GROUP = "btn-group";

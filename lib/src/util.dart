@@ -1,3 +1,5 @@
+part of dartstrap;
+
 class Util {
   static void execJS(String javascript, [bool removeAfter = true]){
     Element element = new Element.tag("script");

@@ -1,3 +1,5 @@
+part of dartstrap;
+
 class Alert {
   static final String BLOCK       = "alert-block";
   static final String WARNING     = "";

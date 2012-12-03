@@ -1,5 +1,5 @@
 import 'dart:html';
-import '../lib/dartstrap.dart';
+import 'package:dartstrap/dartstrap.dart';
 
 Progress progress = new Progress('#progress');
 

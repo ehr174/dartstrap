@@ -1,5 +1,5 @@
-#import('dart:html');
-#import('../lib/dartstrap.dart');
+import 'dart:html';
+import '../lib/dartstrap.dart';
 
 void main() {
   Alert alert = new Alert('#alert');

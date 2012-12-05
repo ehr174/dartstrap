@@ -18,6 +18,7 @@ void main() {
 
     document.query('#vote').on.click.add((_){
       print('clicked vote button.');
+      modal.hide();
     });
   });
 

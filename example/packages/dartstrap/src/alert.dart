@@ -42,13 +42,14 @@ class Alert {
       opts.add(" ${val}");
     });
 
-    StringBuffer div = new StringBuffer();
-    div.add('<div class="${opts.toString()}">');
-    div.add('  <button type="button" class="close" data-dismiss="alert">×</button>');
-    div.add('  ${message}');
-    div.add('</div>');
+    String div = '''
+<div class="${opts.toString()}">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  ${message}
+</div>
+''';
 
-    return div.toString();
+    return div;
   }
 
 }

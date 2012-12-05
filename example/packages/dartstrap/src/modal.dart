@@ -28,14 +28,28 @@ class Modal {
     DivElement el = document.query('#${this.topDivId}');
     if( el != null ){ el.remove(); }
 
-    String div = _buildModalDiv();
-    DivElement divElement = new Element.html(div);
-
-    parent.nodes.add(divElement);
+    parent.appendHtml(_buildModalDiv());
 
     Util.execJS( "jQuery('#${this.topDivId}').modal('show');" );
 
-    return divElement;
+    return query('#${this.topDivId}');
+  }
+  
+  /**
+   * hide
+   *
+   * */
+  void hide() {
+    Util.execJS( "jQuery('#${this.topDivId}').modal('hide');" );
+  }
+  
+  
+  /**
+   * toggle
+   *
+   * */
+  void toggle() {
+    Util.execJS( "jQuery('#${this.topDivId}').modal('toggle');" );
   }
 
 
@@ -55,34 +69,21 @@ class Modal {
   </div>
 */
   String _buildModalDiv() {
-    StringBuffer div = new StringBuffer();
-    div.add('<div id="${topDivId}" class="${topDivClass}">');
-    div.add('  <div class="modal-header">');
-    div.add('    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>');
-    div.add('    ${header}');
-    div.add('  </div>');
-    div.add('  <div class="modal-body">');
-    div.add('    ${body}');
-    div.add('  </div>');
-    div.add('  <div class="modal-footer">');
-    div.add('    ${footer}');
-    div.add('  </div>');
-    div.add('</div>');
-
-    return div.toString();
+    String div = '''
+  <div id="${topDivId}" class="${topDivClass}">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      ${header}
+    </div>
+    <div class="modal-body">
+      ${body}
+    </div>
+    <div class="modal-footer">
+      ${footer}
+    </div>
+  </div>
+''';
+    return div;
   }
-
-//  void toggle() {
-//    Util.execJS( "jQuery('${this._targetElementID}').modal('toggle');" );
-//  }
-//
-//  void show() {
-////    Util.execJS( "\$('${this._targetElementID}').modal('show');", false );
-//    Util.execJS( "jQuery('${this._targetElementID}').modal('show');" );
-//  }
-//
-//  void hide() {
-//    Util.execJS( "jQuery('${this._targetElementID}').modal('hide');" );
-//  }
 
 }

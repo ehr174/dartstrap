@@ -56,12 +56,13 @@ class Progress {
       opts.add(" ${val}");
     });
 
-    StringBuffer div = new StringBuffer();
-    div.add('<div class="${opts.toString()}">');
-    div.add('  <div class="bar" style="width: ${percent}%;"></div>');
-    div.add('</div>');
-
-    return div.toString();
+    String div = '''
+  <div class="${opts.toString()}">
+    <div class="bar" style="width: ${percent}%;"></div>
+  </div>
+''';
+    
+    return div;
   }
 
   void _onPercentChanged( int percent ) {

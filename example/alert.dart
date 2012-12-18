@@ -25,4 +25,8 @@ void main() {
       divAlert.remove();
     }, 3000);
   });
+
+  document.query('#clear').on.click.add((_){
+    alert.clear();
+  });
 }

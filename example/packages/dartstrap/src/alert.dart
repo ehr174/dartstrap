@@ -34,6 +34,14 @@ class Alert {
     return divElement;
   }
 
+  void clear() {
+    Element parent = document.query( this._targetElementID );
+    if( parent == null ) {
+      throw( new Exception('Target Not Found. [${this._targetElementID}]') );
+    }
+    parent.removedNodes;
+  }
+
 
   String _buildAlertDiv( String message, List<String> options ) {
     StringBuffer opts = new StringBuffer();

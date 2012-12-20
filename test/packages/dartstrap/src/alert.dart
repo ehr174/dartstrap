@@ -40,10 +40,7 @@ class Alert {
       throw( new Exception('Target Not Found. [${this._targetElementID}]') );
     }
 
-    int len = parent.children.length;
-    for( int ii = 0; ii < len; ii++ ){
-      parent.children[0].remove();
-    }
+    parent.children.clear();
   }
 
 

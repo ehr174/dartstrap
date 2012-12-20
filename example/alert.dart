@@ -1,5 +1,6 @@
 import 'dart:html';
-import 'package:dartstrap/dartstrap.dart';
+//import 'package:dartstrap/dartstrap.dart';
+import '../lib/dartstrap.dart';
 
 void main() {
   Alert alert = new Alert('#alert');

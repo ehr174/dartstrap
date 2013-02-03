@@ -8,19 +8,19 @@ void main() {
   progress.percent = 30;
   progress.show([]);
 
-  document.query('#selectPercent').on.change.add((handler){
+  document.query('#selectPercent').onChange.listen((handler){
     SelectElement se = handler.currentTarget;
     progress.percent = int.parse(se.value);
   });
 
-  document.query('#chkStriped').on.click.add((handler){
+  document.query('#chkStriped').onClick.listen((handler){
 //    InputElement ie = handler.currentTarget;
 //    print(ie.checked);
     _progressShow();
 
   });
 
-  document.query('#chkActive').on.click.add((handler){
+  document.query('#chkActive').onClick.listen((handler){
 //    InputElement ie = handler.currentTarget;
     _progressShow();
 
@@ -28,7 +28,7 @@ void main() {
 
 
   document.queryAll('[name="optionsRadios"]').forEach((element){
-    element.on.click.add((handler){
+    element.onClick.listen((handler){
 //      InputElement ie = handler.currentTarget;
 //      print(ie.value);
       _progressShow();

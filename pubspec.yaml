@@ -4,3 +4,5 @@ description: >
   Twitter Bootstrap for Dart.
 author: ehr174 <ehr174@gmail.com>
 homepage: https://github.com/ehr174/dartstrap
+dependencies:
+  browser: any
